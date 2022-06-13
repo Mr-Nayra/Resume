@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ion-icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <title>Resume</title>
+</head>
+
+<body class="overflow-x-hidden flex items-center justify-center">
+    <div class="pdf border-2 border-black" id="pdf">
+        <!-- header -->
+        <header class=" p-6 flex flex-row justify-between">
+            <div class="h-full flex flex-row items-start">
+                <img class="h-[130px] w-[130px] rounded-full" src="./images/profile.jpg" alt="profile picture">
+                <div class="ml-4">
+                    <h1 class="text-3xl font-medium">Aryan Rawther</h1>
+                    <h3 class="text-base font-normal">Front-End Developer</h3>
+                </div>
+            </div>
+
+            <div class="h-full flex-col flex items-end text-[0.7rem] font-medium">
+                <a class="links" href="mailto:aryanedu5786@gmail.com">aryanedu5786@gmail.com <ion-icon name="mail"
+                        class="logo
+"></ion-icon></a>
+                <p class="links">+917905206587 <ion-icon name="phone-portrait" class="logo
+"></ion-icon>
+                </p>
+                <p class="links">Bangalore, India <ion-icon name="location" class="logo
+                    "></ion-icon>
+                </p>
+                <a class="links" href="linkedin.com/in/AryanRawther">linkedin.com/in/AryanRawther <ion-icon
+                        name="logo-linkedin" class="logo
+"></ion-icon></a>
+                <a class="links" href="github.com/Mr-Nayra">github.com/Mr-Nayra <ion-icon name="logo-github" class="logo
+"></ion-icon>
+                </a>
+            </div>
+
+        </header>
+
+        <!-- Summary -->
+        <div>
+            <p class="text-xs text-center text-gray-800 font-normal px-6 pb-6">"A qualified and professional web
+                developer with
+                expertise in
+                Front-End
+                Development.Passionate about the world of cryptocurrencies and blockchain development. Strong creative,
+                analytical skills and a team
+                player with an eye for detail."
+            </p>
+        </div>
+
+        <!-- Main section -->
+        <main class="flex ">
+            <!-- Left section -->
+            <section class="flex-[1.2] mr-6">
+
+                <!-- Experience -->
+                <div class="mb-6">
+                    <h2 class="heading">Experience</h2>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col items-center mt-1.5">
+                            <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
+                            <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+                        </div>
+                        <div>
+                            <h3 class="heading2">Junior React Developer</h3>
+                            <p class="subheading">GrowthSpree</p>
+                            <p class="subsubheading">Part-time</p>
+                            <p class="text-xs text-gray-800 mt-2">Responsible for building single page applications from
+                                scratch using React. Collaborate with Backend Developers, and UI/UX designers over
+                                various
+                                projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Initiatives -->
+                <div class="mb-6">
+                    <h2 class="heading">Initiatives</h2>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col items-center mt-1.5">
+                            <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
+                            <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="heading2">Club Head</h3>
+                            <p class="subheading">Nexus</p>
+                            <p class="text-xs text-gray-800">Event head for a competitive coding event with over a
+                                thousand participants. Looked over the marketing, design and operations/logistics team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col items-center">
+                            <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
+                            <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+                        </div>
+                        <div class="mb-5 -mt-1.5">
+                            <h3 class="heading2">Design and Development head</h3>
+                            <p class="subheading">Shunya</p>
+                            <p class="text-xs text-gray-800">Headed the design team of 8, where we were assigned the
+                                task to
+                                create various tempelates/designs for social media, flyers and banners related to the
+                                club
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col items-center">
+                            <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
+                            <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+                        </div>
+                        <div class="-mt-1.5">
+                            <h3 class="heading2">Cryptocurrency trading mentor</h3>
+                            <p class="subheading">The Trading Hub</p>
+                            <p class="text-xs text-gray-800">Responsibilities included guiding my peers to understand
+                                more
+                                about trading/investing and keeping everyone updated about the new developments
+                                happening in
+                                the blockchain universe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="mb-6">
+                    <h2 class="heading">Education</h2>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col items-center  mt-1.5">
+                            <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
+                            <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="heading2">Primary and Secondary Education</h3>
+                            <p class="subheading">City Montessori School</p>
+                            <p class="subsubheading">2003-2018</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row">
+                        <div class="flex flex-col items-center">
+                            <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
+                            <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+                        </div>
+                        <div class="-mt-1.5">
+                            <h3 class="heading2">B-Tech CSE Undergraduate</h3>
+                            <p class="subheading">PES University</p>
+                            <p class="subsubheading">2020-present</p>
+                            <p class="text-xs mt-2 font-medium text-gray-800">X- 91.2%</p>
+                            <p class="text-xs font-medium text-gray-800">XII- 94%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Section -->
+            <section class="flex-1 ml-6">
+                <!-- Skills -->
+                <div class="mb-6">
+                    <h2 class="heading">Skills</h2>
+                    <div class="mx-6">
+                        <div>
+                            <div class="inversebtn">
+                                <p>Front-End</p>
+                            </div>
+                            <div class="btn">
+                                <p>HTML</p>
+                            </div>
+                            <div class="btn">
+                                <p>CSS</p>
+                            </div>
+                            <div class="btn">
+                                <p>Tailwind</p>
+                            </div>
+                            <div class="btn">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="btn">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="btn">
+                                <p>TypeScript</p>
+                            </div>
+                            <div class="btn">
+                                <p>React / Redux</p>
+                            </div>
+                            <div class="btn">
+                                <p>React Native</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inversebtn">
+                                <p>Back-End</p>
+                            </div>
+                            <div class="btn">
+                                <p>Node</p>
+                            </div>
+                            <div class="btn">
+                                <p>Express</p>
+                            </div>
+                            <div class="btn">
+                                <p>Mongo DB</p>
+                            </div>
+                            <div class="btn">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inversebtn">
+                                <p>Hosting</p>
+                            </div>
+                            <div class="btn">
+                                <p>Amazon(EC2)</p>
+                            </div>
+                            <div class="btn">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inversebtn">
+                                <p>Design</p>
+                            </div>
+                            <div class="btn">
+                                <p>Photoshop</p>
+                            </div>
+                            <div class="btn">
+                                <p>Adobe XD</p>
+                            </div>
+                            <div class="btn">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inversebtn">
+                                <p>No Code</p>
+                            </div>
+                            <div class="btn">
+                                <p>Webflow</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Languages Known -->
+                <div class="mb-6">
+                    <h2 class="heading">Languages</h2>
+                    <div class="ml-6">
+                        <p class="subheading">Hindi</p>
+                        <p class="subsubheading">Native or bilingual proficiency</p>
+                        <p class="subheading pt-2">English</p>
+                        <p class="subsubheading">Full professional proficiency</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+    <button onClick="generatepdf()">download</button>
+
+    <script>
+        function generatepdf() {
+            console.log('hi');
+            const pdf = document.getElementById("pdf");
+            html2pdf().from(pdf).save();
+        }
+    </script>
+</body>
+
+</html>

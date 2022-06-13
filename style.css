@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+
+.heading {
+    @apply text-xl pl-6 font-bold pb-1 border-b-2 border-gray-600 mb-2
+}
+
+.heading2 {
+    @apply text-lg font-bold
+}
+
+.subheading {
+    @apply text-gray-800 text-sm font-medium
+}
+
+.subsubheading {
+    @apply text-gray-600 text-xs font-normal italic
+}
+
+.inversebtn {
+    @apply text-white text-xs inline-block py-1 px-2 bg-gray-800 rounded border border-gray-800 mb-2
+}
+
+.btn {
+    @apply text-gray-800 text-xs inline-block border border-gray-800 py-1 px-2 rounded mb-2
+}
+
+.links {
+    @apply mb-2.5 flex items-center
+}
+
+.logo {
+    @apply h-[16px] w-[16px] ml-1
+}
+
+@tailwind utilities;
+
+.pdf {
+    height: 11in;
+    width: 8.5in;
+    font-family: 'Ubuntu';
+}
