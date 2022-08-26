@@ -37,7 +37,7 @@
 @tailwind utilities;
 
 .pdf {
-    height: 11in;
+    height: 12in;
     width: 8.5in;
     font-family: 'Ubuntu';
 }
