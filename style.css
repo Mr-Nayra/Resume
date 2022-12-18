@@ -19,11 +19,11 @@
 }
 
 .inversebtn {
-    @apply text-white text-xs inline-block py-1 px-2 bg-gray-800 rounded border border-gray-800 mb-2
+    @apply text-white text-xs inline-block py-1 px-2 bg-gray-800 rounded border border-gray-800 mb-1.5
 }
 
 .btn {
-    @apply text-gray-800 text-xs inline-block border border-gray-800 py-1 px-2 rounded mb-2
+    @apply text-gray-800 text-xs inline-block border border-gray-800 py-1 px-2 rounded mb-1.5
 }
 
 .links {
