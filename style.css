@@ -27,7 +27,7 @@
 }
 
 .links {
-    @apply mb-2.5 flex items-center
+    @apply mb-2 flex items-center
 }
 
 .logo {
