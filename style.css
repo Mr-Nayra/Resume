@@ -7,7 +7,7 @@
 }
 
 .heading2 {
-    @apply text-lg font-bold
+    @apply text-base font-bold leading-4
 }
 
 .subheading {
@@ -27,7 +27,7 @@
 }
 
 .links {
-    @apply mb-2 flex items-center
+    @apply mb-1 flex items-center
 }
 
 .logo {
