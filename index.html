@@ -20,7 +20,7 @@
 <body class="overflow-x-hidden flex items-center justify-center">
   <div class="pdf border-2 border-black" id="pdf">
     <!-- header -->
-    <header class="px-6 py-4 flex flex-row justify-between items-center">
+    <header class="px-6 py-2 flex flex-row justify-between items-center">
       <div class="h-full flex flex-row items-start">
         <img class="h-[100px] w-[100px] rounded-full" src="./images/profile.jpg" alt="profile picture" />
         <div class="ml-4">
@@ -61,7 +61,7 @@
     <!-- Main section -->
     <main class="flex">
       <!-- Left section -->
-      <section class="flex-[1.2] mr-6">
+      <section class="flex-[1.1] mr-6">
         <!-- Experience -->
         <div class="mb-4">
           <h2 class="heading mb-2">Experience</h2>
@@ -73,12 +73,14 @@
             <div class="mb-4">
               <h3 class="heading2">Junior React Developer</h3>
               <p class="subheading">GrowthSpree</p>
-              <p class="subsubheading">Part-time(Feb 2022- Present)</p>
+              <p class="subsubheading">Part-time(Feb 2022- Apr 2023)</p>
               <p class="text-xs text-gray-800 mt-1">
-                Responsible for building single page applications from scratch using
-                React. Collaborate with Backend Developers, and UI/UX designers
-                over various projects.
+                Built single page applications from scratch using React, collaborating with Backend Developers and UI/UX
+                designers on various projects.
               </p>
+              <p class="text-xs text-gray-800 mt-1">
+                Developed visually appealing and user-friendly websites, conversion landing pages, and HTML emails for
+                clients in collaboration with marketing teams.</p>
             </div>
           </div>
           <div class="flex flex-row -mt-0.5">
@@ -91,9 +93,12 @@
               <p class="subheading">PESU Venture Labs</p>
               <p class="subsubheading">Part-time(Apr 2023- Present)</p>
               <p class="text-xs text-gray-800 mt-1">
-                Responsible for building single page applications from scratch using
-                React. Collaborate with Backend Developers, and UI/UX designers
-                over various projects.
+                Led the frontend team in adding new functionality to a Next.js application, while suggesting and
+                overseeing the creation of backend APIs to fix bugs and issues.
+              </p>
+              <p class="text-xs text-gray-800 mt-1">
+                Made the application mobile responsive and added Tailwind CSS to enhance the app's design and
+                functionality.
               </p>
             </div>
           </div>
@@ -198,7 +203,7 @@
       </section>
 
       <!-- Right Section -->
-      <section class="flex-1 ml-4">
+      <section class="flex-1">
         <!-- Skills -->
         <div class="mb-3">
           <h2 class="heading">Skills</h2>
@@ -340,28 +345,48 @@
         </div>
 
         <!-- Projects Section -->
-        <div class="mb-6">
+        <div class="mb-6 -mt-1">
           <h2 class="heading">Projects</h2>
-          <p class="text-xs text-gray-800 ml-4">
-            Worked on 50+ Web development projects, including-
-          </p>
           <div class="ml-4 mr-2 mb-2">
-            <h3 class="heading2">Winbox Help App</h3>
-            <p class="subheading text-xs">Next.js, Static Site Generation</p>
-            <a class="subsubheading underline" target="_blank"
-              href="https://help.getwinbox.co/">https://help.getwinbox.co/</a>
+            <div class="flex items-end gap-2">
+              <h3 class="heading2">Culture place</h3>
+              <a class="subsubheading underline" target="_blank"
+                href="https://cultureplace.in/">(https://cultureplace.in/)</a>
+            </div>
+            <p class="subheading text-xs">React, Redux, Tailwind</p>
+
             <ul class="list-disc">
               <li class="text-xs text-gray-800">
-                A help app which contains detailed information on how to use
-                Winbox.
+                Culture Place is a community collaboration web application designed to promote social engagement and
+                interaction.
               </li>
               <li class="text-xs text-gray-800">
-                Created the whole app with Next.js with three basic screen
-                layouts.
+                Contributed to the development of the Culture Place web app by solving bugs, adding new functionality,
+                and suggesting improvements to logic errors.
               </li>
               <li class="text-xs text-gray-800">
-                Uses static site generation to populate webpages on the server
-                and serve the html pages directly to the user when requested.
+                Ensured a positive user experience by making the application mobile responsive and accessible on all
+                devices.
+              </li>
+            </ul>
+          </div>
+          <div class="ml-4 mr-2 mb-2">
+            <div class="flex items-end gap-2">
+              <h3 class="heading2">Winbox Help App</h3>
+
+              <a class="subsubheading underline" target="_blank"
+                href="https://help.getwinbox.co/">(https://help.getwinbox.co/)</a>
+            </div>
+            <p class="subheading text-xs">Next.js, Static Site Generation</p>
+
+            <ul class="list-disc">
+              <li class="text-xs text-gray-800">
+                Developed a comprehensive help app using Next.js, with three basic screen layouts to guide users on how
+                to use Winbox.
+              </li>
+              <li class="text-xs text-gray-800">
+                Utilized static site generation to ensure fast loading times and efficient content delivery, delivering
+                HTML pages directly to users when requested.
               </li>
             </ul>
           </div>
@@ -372,35 +397,34 @@
             </p>
             <ul class="list-disc">
               <li class="text-xs text-gray-800">
-                An email marketing software which performs DNS, Blacklist
-                checks and other validations to lower email spam rates for
-                clienta.
+                Developed an email marketing software with React that performs DNS, blacklist checks, and other
+                validations to reduce email spam rates for clients.
               </li>
               <li class="text-xs text-gray-800">
-                Checks whether an email exists or not and prevents your mail
-                to land in spam.
+                Implemented a feature to verify whether an email address exists, preventing emails from being marked as
+                spam or undeliverable.
+
               </li>
               <li class="text-xs text-gray-800">
-                Created the whole dashboard independently with React.
-                Integrated backend with front-end using REST APIs requests.
+                Successfully integrated the backend with the front-end using REST API requests, creating a seamless user
+                experience.
               </li>
             </ul>
           </div>
           <div class="ml-4 mr-2">
-            <h3 class="heading2">GrowthSpree Website</h3>
+            <div class="flex items-end gap-2">
+              <h3 class="heading2">GrowthSpree</h3>
+              <a class="subsubheading underline" target="_blank"
+                href="https://www.growthspreeofficial.com/">(https://www.growthspreeofficial.com/)</a>
+            </div>
             <p class="subheading text-xs">Webflow</p>
-            <a class="subsubheading underline" target="_blank"
-              href="https://www.growthspreeofficial.com/">https://www.growthspreeofficial.com/</a>
             <ul class="list-disc">
               <li class="text-xs text-gray-800">
-                Official website for GrowthSpree.
-              </li>
+                Developed and maintained the frontend of the GrowthSpree official website using Webflow, a no-code
+                framework.
               <li class="text-xs text-gray-800">
-                Made with no-code framework(Webflow).
-              </li>
-              <li class="text-xs text-gray-800">
-                Responsible for creating and maintaining all the frontend
-                elements of the website.
+                Created a visually appealing and user-friendly website to effectively promote and showcase the company's
+                services and mission. </li>
               </li>
             </ul>
           </div>
