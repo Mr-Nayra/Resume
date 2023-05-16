@@ -3,7 +3,7 @@
 @tailwind components;
 
 .heading {
-    @apply text-xl pl-6 font-bold pb-1 border-b-2 border-gray-600 mb-2
+    @apply text-xl pl-6 font-bold pb-0.5 border-b-2 border-gray-600 mb-2
 }
 
 .heading2 {
@@ -27,7 +27,7 @@
 }
 
 .links {
-    @apply mb-1 flex items-center
+    @apply mb-0.5 flex items-center
 }
 
 .logo {
