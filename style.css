@@ -2,12 +2,16 @@
 @tailwind base;
 @tailwind components;
 
+body {
+    @apply leading-none
+}
+
 .heading {
     @apply text-xl pl-6 font-bold pb-0.5 border-b-2 border-gray-600 mb-2
 }
 
 .heading2 {
-    @apply text-base font-bold leading-4
+    @apply text-base font-bold leading-3
 }
 
 .subheading {
