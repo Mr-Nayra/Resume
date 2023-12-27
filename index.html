@@ -1,474 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <!-- Ion-icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- Ion-icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Resume</title>
+  </head>
 
-  <title>Resume</title>
-</head>
-
-<body class="overflow-x-hidden flex items-center justify-center">
-  <div class="pdf border-2 border-black" id="pdf">
-    <!-- header -->
-    <header class="px-6 py-2 flex flex-row justify-between items-center">
-      <div class="h-full flex flex-row items-start">
-        <img class="h-[100px] w-[100px] rounded-full" src="./images/profile.jpg" alt="profile picture" />
-        <div class="ml-4">
-          <h1 class="text-3xl font-medium">Aryan Rawther</h1>
-          <h3 class="text-base font-normal">Software Developer</h3>         
+  <body class="overflow-x-hidden flex items-center justify-center">
+    <div class="pdf border-2 border-black" id="pdf">
+      <!-- header -->
+      <header class="px-6 py-2 flex flex-row justify-between items-center">
+        <div class="h-full flex flex-row items-start">
+          <img
+            class="h-[100px] w-[100px] rounded-full"
+            src="./images/profile.jpg"
+            alt="profile picture"
+          />
+          <div class="ml-4">
+            <h1 class="text-3xl font-medium">Aryan Rawther</h1>
+            <h3 class="text-base font-normal">Software Developer</h3>
+          </div>
         </div>
+
+        <div class="h-full flex-col flex items-end text-[0.7rem] font-medium">
+          <a class="links" href="mailto:aryanedu5786@gmail.com" target="_blank"
+            >aryanedu5786@gmail.com
+            <ion-icon name="mail" class="logo"></ion-icon
+          ></a>
+          <p class="links">
+            +917905206587
+            <ion-icon name="phone-portrait" class="logo"></ion-icon>
+          </p>
+          <p class="links">
+            Bangalore, India <ion-icon name="location" class="logo"></ion-icon>
+          </p>
+          <a
+            class="links"
+            href="https://linkedin.com/in/AryanRawther"
+            target="_blank"
+            >linkedin.com/in/AryanRawther
+            <ion-icon name="logo-linkedin" class="logo"></ion-icon
+          ></a>
+          <a class="links" href="https://github.com/Mr-Nayra" target="_blank"
+            >github.com/Mr-Nayra
+            <ion-icon name="logo-github" class="logo"></ion-icon>
+          </a>
+          <a class="links" href="https://leetcode.com/Mr_Nayra/" target="_blank"
+            >leetcode.com/Mr_Nayra
+            <ion-icon name="code-slash" class="logo"></ion-icon>
+          </a>
+          <a
+            class="links text-[0.7rem] font-medium"
+            href="https://tinyurl.com/aryan-r-portfolio"
+            target="_blank"
+            >tinyurl.com/aryan-r-portfolio
+            <ion-icon name="laptop-outline" class="logo"></ion-icon
+          ></a>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <div>
+        <p class="text-xs text-center text-gray-800 font-normal px-6 pb-2">
+          "I am a highly skilled and experienced developer, specializing in
+          front-end development. I am known for my creative and analytical
+          abilities as well as my attention to detail. I am a team player and
+          always strive to deliver the best results."
+        </p>
       </div>
 
-      <div class="h-full flex-col flex items-end text-[0.7rem] font-medium">
-        <a class="links" href="mailto:aryanedu5786@gmail.com" target="_blank">aryanedu5786@gmail.com
-          <ion-icon name="mail" class="logo"></ion-icon></a>
-        <p class="links">
-          +917905206587
-          <ion-icon name="phone-portrait" class="logo"></ion-icon>
-        </p>
-        <p class="links">
-          Bangalore, India <ion-icon name="location" class="logo"></ion-icon>
-        </p>
-        <a class="links" href="https://linkedin.com/in/AryanRawther" target="_blank">linkedin.com/in/AryanRawther
-          <ion-icon name="logo-linkedin" class="logo"></ion-icon></a>
-        <a class="links" href="https://github.com/Mr-Nayra" target="_blank">github.com/Mr-Nayra
-          <ion-icon name="logo-github" class="logo"></ion-icon>
-        </a>
-        <a class="links" href="https://leetcode.com/Mr_Nayra/" target="_blank">leetcode.com/Mr_Nayra
-          <ion-icon name="code-slash" class="logo"></ion-icon>
-        </a>
-        <a class="links text-[0.7rem] font-medium" href="https://tinyurl.com/aryan-r-portfolio" target="_blank">tinyurl.com/aryan-r-portfolio
-          <ion-icon name="laptop-outline" class="logo"></ion-icon></a>
-      </div>
-    </header>
+      <!-- Main section -->
+      <main class="flex gap-6">
+        <!-- Left section -->
+        <section class="flex-[1.15]">
+          <!-- Experience -->
+          <div class="mb-2">
+            <h2 class="heading mb-2">Experience</h2>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div class="mb-2">
+                <h3 class="heading2">
+                  Student Innovation Lead (Product Development)
+                </h3>
+                <p class="subheading">PESU Venture Labs</p>
+                <p class="subsubheading">Part-time(Apr 2023- Present)</p>
+                <ul class="list-disc ml-2">
+                  <li class="text-xs text-gray-800">
+                    Led the frontend team in developing various React/Next.js
+                    applications, while suggesting and overseeing the creation
+                    of backend APIs to fix bugs and issues.
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Debugged existing code, added new features, and contributed
+                    to ideation for various software projects.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-row -mt-0.5">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div>
+                <h3 class="heading2">Junior React Developer</h3>
+                <p class="subheading">GrowthSpree</p>
+                <p class="subsubheading">Part-time(Feb 2022- Apr 2023)</p>
+                <ul class="list-disc ml-2">
+                  <li class="text-xs text-gray-800">
+                    Built single page applications from scratch using React,
+                    collaborating with Backend Developers and UI/UX designers on
+                    various projects.
+                  </li>
+                  <li class="text-xs text-gray-800">
+                    Developed visually appealing and user-friendly websites,
+                    conversion landing pages, and HTML emails for clients in
+                    collaboration with marketing teams.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <!-- Summary -->
-    <div>
-      <p class="text-xs text-center text-gray-800 font-normal px-6 pb-2">
-        "I am a highly skilled and experienced developer, specializing in front-end development. I am known for my creative and analytical abilities as well as my attention to detail. I am a team player and always strive to deliver the best results."
-      </p>
+          <!-- extracurriculars -->
+          <div class="mb-2">
+            <h2 class="heading mb-2">Extracurriculars</h2>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div class="mb-2">
+                <h3 class="heading2">
+                  Club Head <span class="text-xs">(2021-2022)</span> / Club
+                  Mentor <span class="text-xs">(2022-2023)</span>
+                </h3>
+                <p class="subheading">Nexus</p>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div class="mb-2">
+                <h3 class="heading2">Design and Development Head</h3>
+                <p class="subheading">Shunya</p>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div>
+                <h3 class="heading2">Cryptocurrency Trading Mentor</h3>
+                <p class="subheading">The Trading Hub</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="mb-2">
+            <h2 class="heading">Education</h2>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div class="mb-2">
+                <h3 class="heading2 mb-1">B-Tech CSE Undergraduate</h3>
+                <div class="flex items-end gap-x-1">
+                  <p class="subheading">PES University</p>
+                  <p class="subsubheading">2020-present</p>
+                </div>
+                <div class="flex mt-1">
+                  <p class="text-xs font-medium text-gray-800 flex-1">
+                    CGPA- 8.09
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="flex flex-col items-center">
+                <div
+                  class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"
+                ></div>
+                <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
+              </div>
+              <div>
+                <h3 class="heading2 mb-1">Primary and Secondary Education</h3>
+                <div class="flex items-end gap-x-1">
+                  <p class="subheading">City Montessori School</p>
+                  <p class="subsubheading">2004-2019</p>
+                </div>
+                <div class="flex mt-1">
+                  <p class="text-xs font-medium text-gray-800 flex-1">
+                    X- 91.2%
+                  </p>
+                  <p class="text-xs font-medium text-gray-800 flex-1">
+                    XII- 94%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Projects -->
+          <div class="mb-2">
+            <h2 class="heading">Projects</h2>
+            <div class="ml-6">
+              <p class="subheading">
+                Repositories Demonstrating Skills and Experience:
+              </p>
+              <ul class="list-disc ml-3">
+                <li class="text-xs text-gray-800 mt-1">
+                  <span class="font-semibold">Learn Node-</span>
+                  <a
+                    href="https://github.com/Mr-Nayra/Learn-Node"
+                    class="italic underline text-gray-600"
+                    >(github.com/Mr-Nayra/Learn-Node)</a
+                  >
+                  <br />
+                  Proficient in Node.js and Express.js with expertise in
+                  developing RESTful APIs, utilizing SQL and MongoDB for data
+                  management and integration.
+                </li>
+                <li class="text-xs text-gray-800 mt-1">
+                  <span class="font-semibold">Learn Solidity-</span>
+                  <a
+                    href="https://github.com/Mr-Nayra/Learn-Solidity"
+                    class="italic underline text-gray-600"
+                    >(github.com/Mr-Nayra/Learn-Solidity)</a
+                  >
+                  <br />
+                  Skilled in developing decentralized applications (DApps) using
+                  React and Solidity, as showcased in this repository.
+                </li>
+                <!-- <li class="text-xs text-gray-800 mt-1">
+                  <span class="font-medium">Becoming AI Developer-</span>
+                  <a
+                    href="https://github.com/Mr-Nayra/Becoming-AI-Developer"
+                    class="italic underline text-gray-600"
+                    >(github.com/Mr-Nayra/Becoming-AI-Developer)</a
+                  >
+                  <br />
+                  I am mastering Python, honing my math skills, and diving into
+                  data analysis with pandas and matplotlib, all to excel in
+                  machine learning and AI.
+                </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Languages Known -->
+          <div class="mb-2">
+            <h2 class="heading">Languages</h2>
+            <div class="ml-6 mr-2 flex flex-col gap-2">
+              <div class="w-1/2">
+                <p class="subheading">Hindi</p>
+                <p class="subsubheading">Native or bilingual proficiency</p>
+              </div>
+              <div class="w-1/2">
+                <p class="subheading">English</p>
+                <p class="subsubheading">Full professional proficiency</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Section -->
+        <section class="flex-1">
+          <!-- Skills -->
+          <div class="mb-2">
+            <h2 class="heading pl-4">Skills</h2>
+            <div class="ml-6 mr-2">
+              <div>
+                <div class="inversebtn">
+                  <p>Front-End</p>
+                </div>
+                <div class="btn">
+                  <p>HTML</p>
+                </div>
+                <div class="btn">
+                  <p>CSS</p>
+                </div>
+                <div class="btn">
+                  <p>Tailwind</p>
+                </div>
+                <div class="btn">
+                  <p>Bootstrap</p>
+                </div>
+                <div class="btn">
+                  <p>Javascript</p>
+                </div>
+                <div class="btn">
+                  <p>TypeScript</p>
+                </div>
+                <div class="btn">
+                  <p>React / Redux</p>
+                </div>
+                <div class="btn">
+                  <p>Next.js</p>
+                </div>
+                <div class="btn">
+                  <p>React Native</p>
+                </div>
+                <div class="btn">
+                  <p>JWT</p>
+                </div>
+                <div class="btn">
+                  <p>Web Sockets</p>
+                </div>
+                <div class="btn">
+                  <p>SEO</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Back-End</p>
+                </div>
+                <div class="btn">
+                  <p>Node</p>
+                </div>
+                <div class="btn">
+                  <p>Express</p>
+                </div>
+                <div class="btn">
+                  <p>SQL</p>
+                </div>
+                <div class="btn">
+                  <p>MongoDb</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Data Analysis</p>
+                </div>
+                <div class="btn">
+                  <p>Pandas</p>
+                </div>
+                <div class="btn">
+                  <p>NumPy</p>
+                </div>
+                <div class="btn">
+                  <p>Matplotlib</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Blockchain</p>
+                </div>
+                <div class="btn">
+                  <p>Web3</p>
+                </div>
+                <div class="btn">
+                  <p>Solidity</p>
+                </div>
+                <div class="btn">
+                  <p>Truffle</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Testing</p>
+                </div>
+                <div class="btn">
+                  <p>Jest</p>
+                </div>
+                <div class="btn">
+                  <p>React-testing-library</p>
+                </div>
+                <div class="btn">
+                  <p>Mocha</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Hosting</p>
+                </div>
+                <div class="btn">
+                  <p>Amazon(EC2)</p>
+                </div>
+                <div class="btn">
+                  <p>Firebase</p>
+                </div>
+                <div class="btn">
+                  <p>Vercel</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Design</p>
+                </div>
+                <div class="btn">
+                  <p>Photoshop</p>
+                </div>
+                <div class="btn">
+                  <p>Adobe XD</p>
+                </div>
+                <div class="btn">
+                  <p>Figma</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>Data Structures / Algorithms</p>
+                </div>
+                <div class="btn">
+                  <p>C++</p>
+                </div>
+                <div class="btn">
+                  <p>Java</p>
+                </div>
+              </div>
+              <div>
+                <div class="inversebtn">
+                  <p>No Code</p>
+                </div>
+                <div class="btn">
+                  <p>Webflow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Section -->
+          <div class="mb-6 -mt-1">
+            <h2 class="heading pl-4">Professional Portfolio</h2>
+            <div class="ml-4 mr-2 mb-1.5">
+              <div class="flex items-end gap-2">
+                <h3 class="heading2">Aluminaries</h3>
+                <a
+                  class="subsubheading underline"
+                  target="_blank"
+                  href="https://aluminaries.com/"
+                  >(https://aluminaries.com/)</a
+                >
+              </div>
+              <p class="subheading text-xs">React, Redux, Tailwind</p>
+
+              <ul class="list-disc">
+                <li class="text-xs text-gray-800">
+                  Aluminaries is a community collaboration web application
+                  designed to promote social engagement and interaction.
+                </li>
+                <li class="text-xs text-gray-800">
+                  Contributed to the development of the Aluminaries web app by
+                  solving bugs, adding new functionality and components,
+                  rewriting styles and suggesting improvements to logic errors.
+                </li>
+                <li class="text-xs text-gray-800">
+                  Ensured a positive user experience by making the application
+                  mobile responsive and accessible on all devices.
+                </li>
+              </ul>
+            </div>
+            <div class="ml-4 mr-2 mb-1.5">
+              <div class="flex items-end gap-2">
+                <h3 class="heading2">Uptrain AI (YC W23)</h3>
+                <a
+                  class="subsubheading underline"
+                  target="_blank"
+                  href="https://uptrain.ai/"
+                  >(https://uptrain.ai/)</a
+                >
+              </div>
+              <p class="subheading text-xs">SEO, Next.js</p>
+
+              <ul class="list-disc">
+                <li class="text-xs text-gray-800">
+                  Uptrain is an innovative online platform dedicated to
+                  understanding the quality of LLM applications.
+                </li>
+                <li class="text-xs text-gray-800">
+                  Significantly improved website performance by enhancing SEO
+                  optimization, increasing performance from 37% to 99%.
+                </li>
+                <li class="text-xs text-gray-800">
+                  Debugged existing codebase and implemented new
+                  functionalities, including a live demo.
+                </li>
+              </ul>
+            </div>
+            <div class="ml-4 mr-2 mb-1.5">
+              <h3 class="heading2">Winbox App/Winbox Help App</h3>
+              <p class="subheading text-xs">
+                React, Next, Redux, React-Router, Oauth2.0, Web sockets
+              </p>
+              <ul class="list-disc">
+                <li class="text-xs text-gray-800">
+                  Developed email marketing software with React, reducing spam
+                  rates via DNS checks and validations.
+                </li>
+                <li class="text-xs text-gray-800">
+                  Seamlessly integrated backend and front-end using REST API,
+                  ensuring a smooth user experience.
+                </li>
+                <li class="text-xs text-gray-800">
+                  Created a fast-loading help app with Next.js, providing
+                  comprehensive guidance to users on Winbox.
+                </li>
+              </ul>
+            </div>
+
+            <div class="ml-4 mr-2 mb-1">
+              <div class="flex items-end gap-2">
+                <h3 class="heading2">GrowthSpree</h3>
+                <a
+                  class="subsubheading underline"
+                  target="_blank"
+                  href="https://www.growthspreeofficial.com/"
+                  >(https://www.growthspreeofficial.com/)</a
+                >
+              </div>
+              <p class="subheading text-xs">Webflow</p>
+              <ul class="list-disc">
+                <li class="text-xs text-gray-800">
+                  Developed and maintained the frontend of the GrowthSpree
+                  official website using Webflow, a no-code framework.
+                </li>
+
+                <li class="text-xs text-gray-800">
+                  Designed a visually appealing, user-friendly website to
+                  showcase the company's services and mission effectively.
+                </li>
+              </ul>
+            </div>
+            <p class="ml-4 mr-2 text-xs font-medium text-gray-800">
+              Note: All my projects are showcased at
+              <a
+                target="_blank"
+                class="underline"
+                href="https://aryan-folio.vercel.app/portfolio"
+                >link</a
+              >
+            </p>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <!-- Main section -->
-    <main class="flex gap-6">
-      <!-- Left section -->
-      <section class="flex-[1.15]">
-        <!-- Experience -->
-        <div class="mb-2">
-          <h2 class="heading mb-2">Experience</h2>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div class="mb-2">
-              <h3 class="heading2">Student Innovation Lead (Product Development)</h3>
-              <p class="subheading">PESU Venture Labs</p>
-              <p class="subsubheading">Part-time(Apr 2023- Present)</p>
-              <ul class="list-disc ml-2">
-                <li class="text-xs text-gray-800">
-                  Led the frontend team in developing various React/Next.js applications, while suggesting and overseeing the creation of backend APIs to fix bugs and issues.
-                </li>
-                <li class="text-xs text-gray-800">
-                  Debugged existing code, added new features, and contributed to ideation for various software projects.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex flex-row -mt-0.5">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div>
-              <h3 class="heading2">Junior React Developer</h3>
-              <p class="subheading">GrowthSpree</p>
-              <p class="subsubheading">Part-time(Feb 2022- Apr 2023)</p>
-              <ul class="list-disc ml-2">
-                <li class="text-xs text-gray-800">
-                  Built single page applications from scratch using React, collaborating with Backend Developers and
-                  UI/UX
-                  designers on various projects.
-                </li>
-                <li class="text-xs text-gray-800">
-                  Developed visually appealing and user-friendly websites, conversion landing pages, and HTML emails for
-                  clients in collaboration with marketing teams.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- extracurriculars -->
-        <div class="mb-2">
-          <h2 class="heading mb-2">Extracurriculars</h2>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div class="mb-1">
-              <h3 class="heading2">Club Head <span class="text-xs">(2021-2022)</span> / Club Mentor <span
-                  class="text-xs">(2022-Present)</span></h3>
-              <p class="subheading">Nexus</p>
-            </div>
-          </div>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div class="mb-1">
-              <h3 class="heading2">Design and Development head</h3>
-              <p class="subheading">Shunya</p>
-            </div>
-          </div>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div>
-              <h3 class="heading2">Cryptocurrency trading mentor</h3>
-              <p class="subheading">The Trading Hub</p>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div class="mb-2">
-          <h2 class="heading">Education</h2>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div class="mb-2">
-              <h3 class="heading2">B-Tech CSE Undergraduate</h3>
-              <div class="flex items-end gap-x-1">
-                <p class="subheading">PES University</p>
-                <p class="subsubheading">2020-present</p>
-              </div>
-              <div class="flex mt-1">
-                <p class="text-xs font-medium text-gray-800 flex-1">CGPA- 8.07</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <div class="h-[15px] w-[15px] border-[3px] rounded-full border-gray-600 mx-2"></div>
-              <div class="flex-1 border-l-2 border-gray-500 w-0"></div>
-            </div>
-            <div>
-              <h3 class="heading2">Primary and Secondary Education</h3>
-              <div class="flex items-end gap-x-1">
-                <p class="subheading">City Montessori School</p>
-                <p class="subsubheading">2004-2019</p>
-              </div>
-              <div class="flex mt-1">
-                <p class="text-xs font-medium text-gray-800 flex-1">X- 91.2%</p>
-                <p class="text-xs font-medium text-gray-800 flex-1">XII- 94%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Personal Projects -->
-        <div class="mb-2">
-          <h2 class="heading">Projects</h2>
-          <div class="ml-6">
-            <p class="subheading">
-              Repositories Demonstrating Skills and Experience:
-            </p>
-            <ul class="list-disc ml-3">
-              <li class="text-xs text-gray-800 mt-1">
-                <span class="font-medium">Learn Node-</span>
-                <a href="https://github.com/Mr-Nayra/Learn-Node" class="italic underline text-gray-600">(github.com/Mr-Nayra/Learn-Node)</a>
-                <br />
-                Proficient in Node.js and Express.js with expertise in developing RESTful APIs, utilizing SQL and
-                MongoDB for data management and integration.
-              </li>
-              <li class="text-xs text-gray-800 mt-1">
-                <span class="font-medium">Learn Solidity-</span>
-                <a href="https://github.com/Mr-Nayra/Learn-Solidity" class="italic underline text-gray-600">(github.com/Mr-Nayra/Learn-Solidity)</a>
-                <br />
-                Skilled in developing decentralized applications (DApps) using React and Solidity, as showcased in
-                this repository.
-              </li>
-              <li class="text-xs text-gray-800 mt-1">
-                <span class="font-medium">Becoming AI Developer-</span>
-                <a href="https://github.com/Mr-Nayra/Becoming-AI-Developer" class="italic underline text-gray-600">(github.com/Mr-Nayra/Becoming-AI-Developer)</a>
-                <br />
-                I am mastering Python, honing my math skills, and diving into data analysis with pandas and matplotlib, all to excel in machine learning and AI.              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Languages Known -->
-        <div class="mb-2">
-          <h2 class="heading">Languages</h2>
-          <div class="ml-6 mr-2 flex">
-            <div class="w-1/2 pr-1">
-              <p class="subheading">Hindi</p>
-              <p class="subsubheading">Native or bilingual proficiency</p>
-            </div>
-            <div class="w-1/2 pl-1">
-              <p class="subheading">English</p>
-              <p class="subsubheading">Full professional proficiency</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Right Section -->
-      <section class="flex-1">
-        <!-- Skills -->
-        <div class="mb-2">
-          <h2 class="heading  pl-4">Skills</h2>
-          <div class="ml-6 mr-2">
-            <div>
-              <div class="inversebtn">
-                <p>Front-End</p>
-              </div>
-              <div class="btn">
-                <p>HTML</p>
-              </div>
-              <div class="btn">
-                <p>CSS</p>
-              </div>
-              <div class="btn">
-                <p>Tailwind</p>
-              </div>
-              <div class="btn">
-                <p>Bootstrap</p>
-              </div>
-              <div class="btn">
-                <p>Javascript</p>
-              </div>
-              <div class="btn">
-                <p>TypeScript</p>
-              </div>
-              <div class="btn">
-                <p>React / Redux</p>
-              </div>
-              <div class="btn">
-                <p>Next.js</p>
-              </div>
-              <div class="btn">
-                <p>React Native</p>
-              </div>
-              <div class="btn">
-                <p>JWT</p>
-              </div>
-              <div class="btn">
-                <p>Web Sockets</p>
-              </div>
-              <div class="btn">
-                <p>SEO</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Back-End</p>
-              </div>
-              <div class="btn">
-                <p>Node</p>
-              </div>
-              <div class="btn">
-                <p>Express</p>
-              </div>
-              <div class="btn">
-                <p>SQL</p>
-              </div>
-              <div class="btn">
-                <p>MongoDb</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Data Analysis</p>
-              </div>
-              <div class="btn">
-                <p>Pandas</p>
-              </div>
-              <div class="btn">
-                <p>NumPy</p>
-              </div>
-              <div class="btn">
-                <p>Matplotlib</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Blockchain</p>
-              </div>
-              <div class="btn">
-                <p>Web3</p>
-              </div>
-              <div class="btn">
-                <p>Solidity</p>
-              </div>
-              <div class="btn">
-                <p>Truffle</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Testing</p>
-              </div>
-              <div class="btn">
-                <p>Jest</p>
-              </div>
-              <div class="btn">
-                <p>React-testing-library</p>
-              </div>
-              <div class="btn">
-                <p>Mocha</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Hosting</p>
-              </div>
-              <div class="btn">
-                <p>Amazon(EC2)</p>
-              </div>
-              <div class="btn">
-                <p>Firebase</p>
-              </div>
-              <div class="btn">
-                <p>Vercel</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Design</p>
-              </div>
-              <div class="btn">
-                <p>Photoshop</p>
-              </div>
-              <div class="btn">
-                <p>Adobe XD</p>
-              </div>
-              <div class="btn">
-                <p>Figma</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>Data Structures / Algorithms</p>
-              </div>
-              <div class="btn">
-                <p>C++</p>
-              </div>
-              <div class="btn">
-                <p>Java</p>
-              </div>
-            </div>
-            <div>
-              <div class="inversebtn">
-                <p>No Code</p>
-              </div>
-              <div class="btn">
-                <p>Webflow</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="mb-6 -mt-1">
-          <h2 class="heading pl-4">Professional Portfolio</h2>
-          <div class="ml-4 mr-2 mb-1.5">
-            <div class="flex items-end gap-2">
-              <h3 class="heading2">Culture place</h3>
-              <a class="subsubheading underline" target="_blank"
-                href="https://cultureplace.in/">(https://cultureplace.in/)</a>
-            </div>
-            <p class="subheading text-xs">React, Redux, Tailwind</p>
-
-            <ul class="list-disc">
-              <li class="text-xs text-gray-800">
-                Culture Place is a community collaboration web application designed to promote social engagement and
-                interaction.
-              </li>
-              <li class="text-xs text-gray-800">
-                Contributed to the development of the Culture Place web app by solving bugs, adding new functionality,
-                and suggesting improvements to logic errors.
-              </li>
-              <li class="text-xs text-gray-800">
-                Ensured a positive user experience by making the application mobile responsive and accessible on all
-                devices.
-              </li>
-            </ul>
-          </div>
-          <div class="ml-4 mr-2 mb-1.5">
-            <div class="flex items-end gap-2">
-              <h3 class="heading2">Uptrain AI</h3>
-              <a class="subsubheading underline" target="_blank"
-                href="https://uptrain.ai/">(https://uptrain.ai/)</a>
-            </div>
-            <p class="subheading text-xs">SEO, Next.js</p>
-
-            <ul class="list-disc">
-              <li class="text-xs text-gray-800">
-                Uptrain is an innovative online platform dedicated to understanding the quality of LLM applications.
-              </li>
-              <li class="text-xs text-gray-800">
-                Significantly improved website performance by enhancing SEO optimization, increasing performance from 37% to 99%.
-              </li>
-              <li class="text-xs text-gray-800">
-                Debugged existing codebase and implemented new functionalities, including a live demo.
-              </li>
-            </ul>
-          </div>
-          <div class="ml-4 mr-2 mb-1.5">
-            <h3 class="heading2">Winbox App/Winbox Help App</h3>
-            <p class="subheading text-xs">
-              React, Next, Redux, React-Router, Oauth2.0, Web sockets
-            </p>
-            <ul class="list-disc">
-              <li class="text-xs text-gray-800">
-                Developed email marketing software with React, reducing spam rates via DNS checks and validations.
-              </li>
-              <li class="text-xs text-gray-800">
-                Seamlessly integrated backend and front-end using REST API, ensuring a smooth user experience.
-              </li>
-              <li class="text-xs text-gray-800">
-                Created a fast-loading help app with Next.js, providing comprehensive guidance to users on Winbox.
-              </li>
-            </ul>
-          </div>
-          
-          <div class="ml-4 mr-2 mb-1">
-            <div class="flex items-end gap-2">
-              <h3 class="heading2">GrowthSpree</h3>
-              <a class="subsubheading underline" target="_blank"
-                href="https://www.growthspreeofficial.com/">(https://www.growthspreeofficial.com/)</a>
-            </div>
-            <p class="subheading text-xs">Webflow</p>
-            <ul class="list-disc">
-              <li class="text-xs text-gray-800">
-                Developed and maintained the frontend of the GrowthSpree official website using Webflow, a no-code
-                framework.
-              <li class="text-xs text-gray-800">
-                Designed a visually appealing, user-friendly website to showcase the company's services and mission effectively. </li>
-              </li>
-            </ul>
-          </div>
-          <p class="ml-4 mr-2 text-xs font-medium text-gray-800" >Note: All my projects are showcased at  <a target="_blank" class="underline" href="https://aryan-folio.vercel.app/portfolio">link</a></p>
-
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
-
+  </body>
 </html>
